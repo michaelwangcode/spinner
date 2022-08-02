@@ -1,5 +1,32 @@
 // Display a spinner animation in the terminal
 
+// Store the spinner characters
+let spinner = "|/-\\|/-\\|\n";
+
+// Set the time delay
+let time = 100;
+
+// Iterate through the characters of spinner
+for (const char of spinner) {
+
+  // Print each character 200ms after the other
+  setTimeout(() => {
+    process.stdout.write(char);
+  }, time)
+
+  // Increment the time by 200ms
+  time += 200;
+}
+
+
+
+
+
+
+
+
+
+
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
