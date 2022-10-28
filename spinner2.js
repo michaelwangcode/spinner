@@ -12,7 +12,7 @@ for (const char of spinner) {
   // Print each character 200ms after the other
   setTimeout(() => {
     process.stdout.write(char);
-  }, time)
+  }, time);
 
   // Increment the time by 200ms
   time += 200;
@@ -41,7 +41,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   // Need to escape the backslash since it's a special character.
-  process.stdout.write('\r\\   '); 
+  process.stdout.write('\r\\   ');
 }, 700);
 
 setTimeout(() => {
@@ -58,7 +58,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   // Need to escape the backslash since it's a special character.
-  process.stdout.write('\r\\   '); 
+  process.stdout.write('\r\\   ');
 }, 1500);
 
 setTimeout(() => {
